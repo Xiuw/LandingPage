@@ -1,0 +1,42 @@
+.btn-primary{
+	background-color: red
+	border:none;
+}
+
+button{
+	display:flex;
+	justify-content: end;
+}
+
+#form{
+	margin:;
+	padding:;
+}
+
+.ch1{
+	text-align: center;
+}
+
+
+.first{
+	margin-top: 80px;
+}
+
+h2{
+	text-align:center;
+}
+
+.imgCss{
+	text-align:center;
+}
+
+
+
+a,i{
+	color:white;
+}
+
+a:hover{
+	color:gray;
+}
+

@@ -1,49 +1,214 @@
 <!--
-* Should have header element with id="header"
-* Image with the header element with id = "header-img"(Company logo)
-* nav element within the #header element with id="nav-bar"
-
-
-
+FreeCodeCamp- Responsive Web Design Projects -
+		- Build a Product Landing Page
 
 
 -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
 	<link rel="stylesheet" href="style.css">
+
 	<title>Product Landing Page</title>
 
 </head>
 <body>
-	<header id= "header">
+	<!--  General requirements
 
-		<img id="header-img">
-		<nav id="nav-bar">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>	
-		</nav>	
-	</header>
+		 * Navbar should always be at the top of the viewport
+		 * Have at least one media query
+		 * Product landing page should utilize CSS flexbox at lease once
+	-->
 
 
-	<video width="320" height = "240">
-		<source src="xxx.mp4" type="video/mp4">
-	</video>
+<header id= "header">
+	<!-- * Header element with  id = "header" 
+		 * an image(Company logo) within Header element with id="header-img"
+		 * nav element with id="nav-bar", at lease three clickable element inside nav element each with class  nav-link
+		 * When click on .nav-link, it will take to the corresponding section of the page
+	-->
 
-	<form id="form" action="https://www.freecodecamp.com/email-submit">
+	<nav id="nav-bar" class="navbar fixed-top navbar-expand-sm bg-danger navbar-dark">
 
-		<input id="email" type="email" placeholder="Your email ..." required>
+		 <a class="navbar-brand" href="#"><img id="header-img" src="/Other/Logo.png" width="150" height="50" alt="logo"></a>
 
-		<input id="submit" type="submit"></input>
-	</form>
+		<!-- Toggler/collapsibe Button -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
 
+		  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+
+			  <ul class="navbar-nav">
+				    <li class="nav-item active">
+				      <a class="nav-link" href="#wow">Home</a>
+				    </li>
+
+				    <li class="nav-item">
+				      <a class="nav-link" href="#menu">What We Have</a>
+				    </li>
+
+				    <li class="nav-item">
+				      <a class="nav-link" href="#menu">About Us</a>
+				    </li>
+
+				    <li class="nav-item">
+				      <a class="nav-link" href="#myfooter">Contact Us</a>
+				    </li>
+			  </ul> 
+		  </div>
+	</nav>
+
+</header>
+
+
+
+<div id= "wow"class="jumbotron first">
+  <h1 class="display-6">Hello, Sugar Fiend</h1>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi tempora modi, provident impedit quo aut veritatis quod. Necessitatibus praesentium sunt, officia blanditiis error, repudiandae excepturi doloremque similique deleniti eos consequuntur!</p>
+  <hr class="my-4">
+
+  <p class="ch1">*Please sign up to receive future coupons and information.</p>
+
+  <div>
+
+	<form id=form action="https://www.freecodecamp.com/email-submit" class="form-inline justify-content-center" >
+	
+	 <div class="form-group max-sm-3 mb-2 col-4">
+	    
+	    <input type="email" name="email" class="form-control col-12" id="email" placeholder="Email...">
+  	</div>
+
+  		<input id="submit" type="submit" value="Sign Up" class="btn btn-danger mb-2"></input>
+
+	</form> 
+</div>	
+
+</div>
+
+
+<hr>   
+
+<div id="menu" class="imgCss">
+
+
+	<h2>What We Have</h2>
+
+	<img src="/Other/cake3.jpg" width="300px" height="300px" class="img-thumbnail" alt="Cake">
+
+	<img src="/Other/cupcake1.jpg" width="300px" height="300px" class="img-thumbnail" alt="Cupcake">
+
+	<img src="/Other/cake2.jpg" width="300px" height="300px" class="img-thumbnail" alt="Mousse Cake">
+
+	<img src="/Other/pudding.jpg" width="300px" height="300px" class="img-thumbnail" alt="Pudding">
+
+
+</div>    
+
+<hr>
+<div class="container">
+  <h2>Check out this video</h2>
+  <p></p>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe id="video" class="embed-responsive-item" src="/Other/Coffee.mp4"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+	
+	
+	<!-- * Form element included with id="form"
+		 * Input field with id="email" for email address
+		 * email input field use HTML5 validation 
+		 * Submit input with id="submit"
+		 * When submit clicked, the email is submited to "https://www.freecodecamp.com/email-submit"
+	
+
+
+<!-- Footer -->
+<footer id="myfooter" class="page-footer font-small pt-4 bg-danger navbar-dark ">
+
+    <!-- Footer Links -->
+
+	 <!--Grid column-->
+      <div class="">
+
+	     <ul class="list-unstyled list-inline text-center">
+	            <li class="list-inline-item">
+	              <a class="mr-3" href="#!">About Us</a>
+	            </li>
+	            <li class="list-inline-item">
+	              <a class="mr-3" href="#!">Contact Us</a>
+	            </li>
+	            <li class="list-inline-item">
+	              <a class="mr-3" href="#!"></a>
+	            </li>
+	            <li class="list-inline-item">
+	              <a class="mr-3" href="#!">Link 4</a>
+	            </li>
+	          </ul>
+
+        </div>
+
+
+
+     <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://facebook.com/" class="btn-floating btn-fb mx-1">
+            <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/" class="btn-floating btn-tw mx-1">
+            <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://plus.google.com/people" class="btn-floating btn-gplus mx-1">
+            <i class="fa fa-google-plus fa-lg mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+
+
+		<li class="list-inline-item">
+         <a href="https://www.instagram.com" class="btn-floating ins-ic mx-1">
+              <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+       </li>
+            </ul>
+      <!-- Social buttons -->
+    
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="index.html">@Cakery</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script src="script.js"></script>
 
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
