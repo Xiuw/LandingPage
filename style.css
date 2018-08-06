@@ -37,10 +37,6 @@ h2{
 	text-align:center;
 }
 
-.imgCss{
-	text-align:center;
-}
-
 
 
 a,i{
@@ -65,5 +61,23 @@ i:hover{
 
 text-align:center;
 
+
+}
+
+.imgCss{
+
+	text-align:center;
+
+}
+
+img{
+	width:300px;
+	padding:5px;
+	transition: all 1s;
+}
+
+
+img:hover{
+	transform:scale(1.1);
 
 }
