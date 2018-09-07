@@ -1,1 +1,2 @@
-# LandingPage
+# FreeCodeCamp Project -  Products Landing Page
+

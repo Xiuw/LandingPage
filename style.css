@@ -1,50 +1,59 @@
 @media only screen and (max-width: 600px){
 
 	video{
-		width:300px;
+		width:380px;
 	}
+}
 
+hr{
+	width:90%;
 }
 
 
-
-
-.btn-primary{
-	background-color: red
-	border:none;
+.fa.fa-navicon{
+	font-size:30px;
 }
 
-button{
-	display:flex;
-	justify-content: end;
+
+.jumbotron{
+	
+	background:linear-gradient(to bottom,#dc3545,white);
+
+	
+	
+
+}
+.jumbotron p{
+	opacity:1;
 }
 
-#form{
-	margin:;
-	padding:;
-}
-
-.ch1{
+.jumbotron .signup{
 	text-align: center;
 }
 
-
-.first{
-	margin-top: 80px;
+.jumbotron hr{
+	width:70%;
 }
 
 h2{
-	text-align:center;
+	margin:30px;
+	text-align: center;
+}
+
+.first{
+	margin-top: 80px;
+	background-color:white;
 }
 
 
 
 a,i{
-	color:#e5d7d7;
+	color:#fce2e0;
 }
 
 a:hover{
 	color:white;
+	text-decoration: none;
 }
 
 i:hover{
@@ -53,9 +62,59 @@ i:hover{
 
 
 .footerStyle{
-	padding: 20px 0 30px 0;
+	padding: 10px 0 20px 0;
 }
 
+
+.imgCss{
+
+	text-align:center;
+	padding:10px;
+
+}
+
+
+#menu{
+	display:flex;
+	padding:10px 30px;
+	flex-flow:row wrap;
+	justify-content: space-around
+}
+
+
+
+
+#menu .selection{
+	width:300px;
+	position:relative;
+}
+
+#menu .selection a{
+	width:100%;
+	color:black;
+
+	
+}
+
+#menu .selection img{
+	width:100%;
+	
+	transition: all 1s;
+	padding:10px;
+}
+
+
+#menu .selection img:hover{
+	transform:scale(1.1);
+
+}
+
+#menu .selection a:hover{
+
+	color:#f29a98;
+	text-decoration:underline; 
+
+}
 
 .center{
 
@@ -63,21 +122,6 @@ text-align:center;
 
 
 }
-
-.imgCss{
-
-	text-align:center;
-
-}
-
-img{
-	width:300px;
-	padding:5px;
-	transition: all 1s;
-}
-
-
-img:hover{
-	transform:scale(1.1);
-
+video{
+	padding:10px 5px 30px 30px;
 }
