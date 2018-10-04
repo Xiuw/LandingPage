@@ -19,16 +19,12 @@ hr{
 	
 	background:linear-gradient(to bottom,#dc3545,white);
 
-	
-	
+}
 
-}
-.jumbotron p{
-	opacity:1;
-}
 
 .jumbotron .signup{
 	text-align: center;
+	
 }
 
 .jumbotron hr{
@@ -41,7 +37,7 @@ h2{
 }
 
 .first{
-	margin-top: 80px;
+	margin-top: 74px;
 	background-color:white;
 }
 
