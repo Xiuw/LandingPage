@@ -6,7 +6,7 @@
 - A Video
 - A form element with a email input and a submit button
 
-####More detail about this project requirements
+#### More detail about this project requirements
 https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
-####Project Screenshot
+#### Project Screenshot
 <img src="Other/productLanding.jpg" width="500">
